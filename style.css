@@ -355,11 +355,12 @@ button { font: inherit; cursor: pointer; border: none; background: none; }
 
 .site-header{
     padding:15px 0;
+    position: relative;
 }
 
-.header-inner{
+.nav-wrap{
     flex-direction:column;
-    gap:20px;
+    gap:16px;
 }
 
 .main-nav{
@@ -379,10 +380,14 @@ button { font: inherit; cursor: pointer; border: none; background: none; }
     display:none;
 }
 
-.nav-actions .btn-sm{
-    display:none;
+.nav-actions{
+    width: 100%;
+    justify-content: center;
 }
 
+.nav-actions .btn-sm{
+    display:inline-flex;
+}
 .hero{
     min-height:auto;
     padding:140px 0 80px;
@@ -408,9 +413,11 @@ button { font: inherit; cursor: pointer; border: none; background: none; }
 @media (max-width: 640px) {
   .container { padding: 0 20px; }
   .hero-content { padding-top: 120px; }
-  .features-grid, .practice-grid, .articles-grid { grid-template-columns: 1fr; }
+  .footer-grid { grid-template-columns: 1fr; gap: 30px; padding-bottom: 36px; }
+.footer-col p { margin-bottom: 10px; }
+.footer-col a { margin-bottom: 6px; }
+.social-row { justify-content: center; }
   .stats-grid { grid-template-columns: 1fr 1fr; }
-  .footer-grid { grid-template-columns: 1fr; }
   .footer-bottom { flex-direction: column; text-align: center; }
   .about-media-frame { display: none; }
 }
