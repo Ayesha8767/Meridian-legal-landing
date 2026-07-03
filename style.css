@@ -418,6 +418,7 @@ button { font: inherit; cursor: pointer; border: none; background: none; }
 .footer-col a { margin-bottom: 6px; }
 .social-row { justify-content: center; }
   .stats-grid { grid-template-columns: 1fr 1fr; }
+  .articles-grid { grid-template-columns: 1fr; }
   .footer-bottom { flex-direction: column; text-align: center; }
   .about-media-frame { display: none; }
 }
